@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.p10{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+.point{
+    color: rgb(167, 0, 0);
+    font-size: 22px;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+   }

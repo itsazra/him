@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Check!</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .p10{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    }
+    .point{
+    color: rgb(167, 0, 0);
+    font-size: 22px;
+    }
+    .wrap{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+   }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            background-color: rgb(255, 216, 117);
+        }
+        #todo-list {
+            list-style-type: none;
+            padding: 0;
+            width: 300px;
+        }
+        .todo-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+        .todo-item.done {
+            text-decoration: line-through;
+            background-color: #d3ffd3;
+        }
+        #points {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .wrap2{
+        display: flex;
+        justify-content: center;
+        column-gap: 10px;
+        }
+        .wrap3{
+        display: center;
+        justify-content: center;
+        column-gap: 10px;
+        }
+        </style>
+    </head>
+
+<body>
+    <h1>Let's See Hooooow Far My Baby Has Come!!!</h1>
+    <p>Actually I was thinking about motivating my baby about the stuff he should do in the school or in the dorm.<br> So when I see this point system I knew I had to tryyyy!</p>
+    <h3>So basically we need to check  the things we have done in the day.<br> Then we will gain some points and you will see a point chart to see how proud I am!</h3>
+
+    <h1>So Todaaay...</h1>
+    <ul id="todo-list">
+        <li class="todo-item">
+            <span>I washed my face</span>
+            <button onclick="markAsDone(this)">Done</button>
+        </li>
+        <li class="todo-item">
+            <span>I said goodmorning to my beaautiful princess queen</span>
+            <button onclick="markAsDone(this)">Done</button>
+        </li>
+        <li class="todo-item">
+            <span>I had breakfast</span>
+            <button onclick="markAsDone(this)">Done</button>
+        </li>
+        <li class="todo-item">
+            <span>I went to my classes</span>
+            <button onclick="markAsDone(this)">Done</button>
+        </li>
+        <li class="todo-item">
+            <span>I talked with my sweet smart girlll</span>
+            <button onclick="markAsDone(this)">Done</button>
+        </li>
+        <li class="todo-item">
+            <span>I have finished my classes</span>
+            <button onclick="markAsDone(this)">Done</button>
+        </li>
+        <li class="todo-item">
+            <span>I had my dinner</span>
+            <button onclick="markAsDone(this)">Done</button>
+        </li>
+        <li class="todo-item">
+            <span>I have studied (homeworks, reviewing etc.AND CHECKED MY E MAIL IF THERE IS ANYTHING ABOUT THE UPCOMING LESSON)</span>
+            <button onclick="markAsDone(this)">Done</button>
+        </li>
+        <li class="todo-item">
+            <span>I drank enough water (If not get your ass up and drınk some babyy, yes, right now or I wıll be sad)</span>
+            <button onclick="markAsDone(this)">Done</button>
+        </li>
+
+
+    </ul>
+    <div id="points">Points: 0</div>
+
+    <script>
+        let points = 0;
+
+        function markAsDone(button) {
+            const item = button.parentElement;
+            if (!item.classList.contains('done')) {
+                item.classList.add('done');
+                points += 10;
+                document.getElementById('points').textContent = 'Points: ' + points;
+            }
+        }
+    </script>
+<br>
+<div class="wrap">
+    <div class="p10">
+        <img src="https://i.pinimg.com/236x/25/d4/5c/25d45c957da89e8b86ee8b7ac85373ad.jpg">
+        <p class="point">10 Point</p>
+        <p>Bullshi- Do it correctly dudeeeeeee</p>
+    </div>
+    <div class="p10">
+        <img src="https://i.pinimg.com/236x/6c/fe/90/6cfe907f34f55107abc28939013ee335.jpg">
+        <p class="point">20 Point</p>
+        <p>...</p>
+    </div>
+    <div class="p10">
+        <img src="https://i.pinimg.com/236x/35/a0/2c/35a02cdf7b7c42634874140f79dc393d.jpg">
+        <p class="point">30 Point</p>
+        <p>OMG noooooo!!!</p>
+    </div>
+    <div class="p10">
+        <img src="https://i.pinimg.com/236x/91/b6/c5/91b6c5ea1ed870da48078fff576e29fc.jpg">
+        <p class="point">40 Point</p>
+        <p>I meaaaaan I dont really believe its 40 tbh ehehe</p>
+    </div>    
+</div>
+<br>
+<div class="wrap2">
+    <div class="p10">
+        <img src="https://i.pinimg.com/236x/98/d0/42/98d04260c0781134cdd689f9e7784200.jpg">
+        <p class="point">50 Point</p>
+        <p>Things are getting soo much betterrrr</p>
+    </div>
+    <div class="p10">
+        <img src="https://i.pinimg.com/236x/ff/ba/d4/ffbad454279e00c706b50f1ec4b05c5a.jpg">
+        <p class="point">60 Point</p>
+        <p>Wuuuuu Lets gooooo</p>
+    </div>
+    <div class="p10">
+        <img src="https://i.pinimg.com/236x/6a/4f/c8/6a4fc8aba79da51794c3ed241bed63a7.jpg">
+        <p class="point">70 Point</p>
+        <p>Soo closeeeee, gooood job babyy</p>
+    </div>
+    <div class="p10">
+        <img src="https://i.pinimg.com/236x/87/a9/b6/87a9b6b303d6ff12dbd0c15768a16db4.jpg">
+        <p class="point">80 Point</p>
+        <p>Wuuuhuuuu Letz goooo babbyyyy thats amaziing</p>
+    </div>    
+</div>
+<div class="wrap3"></div>
+    <div class="p10">
+        <img src="https://i.pinimg.com/236x/92/2a/38/922a381b4adbee1ad12fafa67989c533.jpg">
+        <p class="point">90 Point</p>
+        <p>You did it motherfrickeeeeeer!!!</p>
+    </div>  
+</div>
+<br>
+    <h3> Click <a href="https://www.youtube.com/watch?v=U-l4ya3ejko">that one</a>  ıf you are below 90 point muaah <3 </h3>
+<br>
+    <img src="https://i.pinimg.com/400x/58/91/cb/5891cb1892a3b31b49223f5b082091b9.jpg">
+    <br>
+   
+    <h2>Click <a href="https://www.youtube.com/watch?v=PHgc8Q6qTjc">that one</a> ıf you have reached 90 points!</h2>
+
+    <p>My precious baby, nothing is as important as your happiness and well-being. Dont put soo much pressure on yourself beacuse you are the most clever person I know! We can always find a way to overcome our problems. AND never forget that Im always with you no matter what, I will help you to figure it out, I will talk and I wil kiss bite suck and most importantly I will loooooveee you more than ever while doing those. So be easy on youself kalp kalp kalp ehehe </p>
+     <img src="https://i.pinimg.com/400x/17/aa/ae/17aaaea5ac2cbd9febd5c97fd2c82beb.jpg">
+     <p>I hope this will bring you amaaazing luck!!</p>
+     <h1>I LOVE YOU MORE HAH!</h1>
+     <img src="https://i.pinimg.com/564x/76/e4/f7/76e4f7763d0544a3197b25ce5092bea2.jpg">
+ </body>
+</html>
